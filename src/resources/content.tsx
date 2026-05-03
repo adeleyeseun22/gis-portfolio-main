@@ -9,7 +9,7 @@ const person: Person = {
   role: "GIS Analyst & Geospatial Data Consultant",
   avatar: "/images/Oluwaseun Adeleye Profile.jpeg",
   email: "adeleyeseun22@gmail.com",
-  location: "Enland/Bristol",
+  location: "Europe/London",
   languages: ["English"],
 };
 
