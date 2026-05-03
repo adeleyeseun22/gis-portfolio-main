@@ -229,7 +229,7 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/healthcare-accessibility-london/mmap_03_london_underserved_boroughs.png",
+      src: "/images/projects/healthcare-accessibility-london/map_03_london_underserved_boroughs.png",
       alt: "Relative healthcare access classification map across Greater London",
       orientation: "horizontal",
     },
