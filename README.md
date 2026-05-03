@@ -42,7 +42,7 @@ The project demonstrates how open geospatial data can be transformed into client
 - Borough-level facility count and density table
 
 ## Planned Portfolio Projects
-1. Urban Growth & Land Cover Change Analysis
+### 1. Urban Growth & Land Cover Change Analysis
 
 A remote sensing project using satellite imagery to assess urban expansion, vegetation change, and land-cover dynamics.
 
@@ -54,7 +54,7 @@ A remote sensing project using satellite imagery to assess urban expansion, vege
 - Raster analysis
 - Change detection
 
-2. Flood Risk Exposure Mapping
+### 2. Flood Risk Exposure Mapping
 
 A humanitarian GIS project for identifying communities, infrastructure, and services exposed to flood-prone areas.
 
@@ -65,7 +65,7 @@ A humanitarian GIS project for identifying communities, infrastructure, and serv
 - Population and settlement data
 - Risk classification
 
-3. Interactive Web GIS Dashboard
+### 3. Interactive Web GIS Dashboard
 
 A client-facing web map dashboard with filters, popups, and downloadable spatial insights.
 
@@ -77,7 +77,7 @@ A client-facing web map dashboard with filters, popups, and downloadable spatial
 - Vercel
 - Interactive map components
 
-4. Power BI / M&E Dashboard Projects
+### 4. Power BI / M&E Dashboard Projects
 
 Dashboard projects focused on public health, development programming, monitoring and evaluation, and performance tracking.
 
