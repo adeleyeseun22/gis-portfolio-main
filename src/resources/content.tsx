@@ -1,4 +1,4 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -9,7 +9,7 @@ const person: Person = {
   role: "GIS Analyst & Geospatial Data Consultant",
   avatar: "/images/Oluwaseun Adeleye Profile.jpeg",
   email: "adeleyeseun22@gmail.com",
-  location: "Available (Remote)",
+  location: "Enland/Bristol",
   languages: ["English"],
 };
 
