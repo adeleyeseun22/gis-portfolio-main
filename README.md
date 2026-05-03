@@ -109,18 +109,18 @@ Dashboard projects focused on public health, development programming, monitoring
 - Spatial data documentation
 
 ## Dashboard & Data Visualization
-*-Power BI dashboard development-*
-*-Tableau dashboard development-*
-*-Excel-based reporting-*
-*-KPI tracking-*
-*-Indicator performance monitoring-*
-*-Public health and M&E visualization-*
-*-Python & Analytics-*
-*-Python for data analysis-*
-*-Pandas-*
-*-GeoPandas-*
-*-Jupyter notebooks-*
-*-Spatial data automation-*
+- *Power BI dashboard development*
+- *Tableau dashboard development*
+- *Excel-based reporting*
+- *KPI tracking*
+- *Indicator performance monitoring*
+- *Public health and M&E visualization*
+- *Python & Analytics*
+- *Python for data analysis*
+- *Pandas*
+- *GeoPandas*
+- *Jupyter notebooks*
+- *Spatial data automation*
 
 ## Data cleaning and transformation
 *-Web GIS & Frontend-*
