@@ -219,17 +219,17 @@ const gallery: Gallery = {
     "A visual collection of GIS maps, dashboard screenshots, geospatial workflows, and portfolio outputs.",
   images: [
     {
-      src: "/images/projects/healthcare-accessibility-london/map_01_london_healthcare_facility_distribution.png",
+      src: "/images/projects/healthcare-accessibility-london/Map_01_London_Healthcare_Facility_Distribution.png",
       alt: "Healthcare facility distribution map across Greater London",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/healthcare-accessibility-london/map_02_london_healthcare_facility_density.png",
+      src: "/images/projects/healthcare-accessibility-london/Map_02_London_Healthcare_Facility_Density.png",
       alt: "Healthcare facility density map across Greater London boroughs",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/healthcare-accessibility-london/map_03_london_underserved_boroughs.png",
+      src: "/images/projects/healthcare-accessibility-london/mmap_03_london_underserved_boroughs.png",
       alt: "Relative healthcare access classification map across Greater London",
       orientation: "horizontal",
     },
