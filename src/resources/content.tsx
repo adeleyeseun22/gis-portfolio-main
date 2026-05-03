@@ -42,7 +42,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/Oluwaseun Adeleye Profile.jpeg",
   label: "Home",
   title: `${person.name} | Geospatial Analytics Portfolio`,
   description:
