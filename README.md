@@ -123,9 +123,9 @@ Dashboard projects focused on public health, development programming, monitoring
 - *Spatial data automation*
 
 ## Data cleaning and transformation
-*-Web GIS & Frontend-*
-*-Next.js-*
-*-React-*
+*Web GIS & Frontend*
+*Next.js*
+*React*
 
 
 ## Tech Stack
