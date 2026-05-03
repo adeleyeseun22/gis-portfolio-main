@@ -1,0 +1,102 @@
+---
+title: "Healthcare Accessibility Mapping in Greater London"
+publishedAt: "2026-05-03"
+summary: "A QGIS-based workflow for mapping healthcare facility distribution, calculating borough-level facility density, and identifying potential service coverage gaps across Greater London."
+images:
+  - "/images/projects/healthcare-accessibility-london/map_01_london_healthcare_facility_distribution.png"
+  - "/images/projects/healthcare-accessibility-london/map_02_london_healthcare_facility_density.png"
+  - "/images/projects/healthcare-accessibility-london/map_03_london_underserved_boroughs.png"
+team:
+  - name: "Oluwaseun Adeleye"
+    role: "GIS Analyst & Geospatial Data Consultant"
+    avatar: "/images/Oluwaseun Adeleye Profile.jpeg"
+    linkedIn: "https://www.linkedin.com/"
+link: ""
+---
+
+## Project Overview
+
+This project demonstrates a reproducible GIS workflow for assessing healthcare facility distribution across an urban region. Using Greater London as the pilot geography, the analysis combines borough boundaries, OpenStreetMap healthcare facility data, spatial joins, facility density calculations, and choropleth mapping to identify variation in mapped healthcare service availability across boroughs.
+
+The project is designed as a portfolio case study for remote GIS, geospatial analysis, public health GIS, humanitarian planning, and urban service mapping roles. It presents a complete workflow from open data acquisition and geospatial cleaning to analytical mapping and reporting.
+
+## Problem Statement
+
+Urban health systems require spatially informed planning to understand whether services are evenly distributed across administrative areas. This project explores how GIS can be used to map healthcare facilities, calculate borough-level facility density, and identify areas that may require further investigation for potential service access gaps.
+
+The analysis does not claim to provide an official access assessment. Instead, it demonstrates an exploratory geospatial workflow that can be extended with population, travel-time, facility capacity, road network, and service availability data.
+
+## Tools Used
+
+- QGIS LTR
+- QuickOSM
+- OpenStreetMap
+- GeoPackage
+- British National Grid / EPSG:27700
+- CSV export
+- QGIS Print Layout
+
+## Data Used
+
+- Greater London borough boundaries
+- OpenStreetMap healthcare facility points
+- Healthcare amenity categories: hospitals, clinics, doctors, and pharmacies
+
+## Methodology
+
+1. Set up a QGIS project using EPSG:27700 British National Grid as the project coordinate reference system.
+2. Loaded and cleaned Greater London borough boundaries, then exported the processed boundary layer as a GeoPackage.
+3. Extracted healthcare facilities from OpenStreetMap using QuickOSM queries for hospital, clinic, doctors, and pharmacy amenities.
+4. Converted polygon healthcare features to centroids where necessary, merged healthcare layers, and retained facility type attributes.
+5. Clipped the merged healthcare facility layer to the Greater London borough boundary to remove out-of-area features.
+6. Used Count Points in Polygon to calculate the number of mapped healthcare facilities within each borough.
+7. Calculated borough area in square kilometres using the QGIS Field Calculator.
+8. Derived facility density as the number of healthcare facilities per square kilometre.
+9. Created a relative access classification based on facility density to distinguish lower, moderate, and higher density boroughs.
+10. Designed and exported professional map layouts showing facility distribution, facility density, and relative access classification.
+
+## Key Outputs
+
+![Healthcare facility distribution across Greater London](/images/projects/healthcare-accessibility-london/map_01_london_healthcare_facility_distribution.png)
+
+**Map 1: Healthcare Facility Distribution Across Greater London**  
+Shows the spatial distribution of mapped healthcare amenities across boroughs.
+
+![Healthcare facility density across Greater London boroughs](/images/projects/healthcare-accessibility-london/map_02_london_healthcare_facility_density.png)
+
+**Map 2: Healthcare Facility Density Across Greater London Boroughs**  
+Uses graduated symbology to show healthcare facilities per square kilometre.
+
+![Relative healthcare access classification across Greater London](/images/projects/healthcare-accessibility-london/map_03_london_underserved_boroughs.png)
+
+**Map 3: Relative Healthcare Access Classification Across Greater London**  
+Classifies boroughs by relative mapped healthcare facility density.
+
+## Portfolio Interpretation
+
+The analysis shows how QGIS can be used to convert raw open geospatial data into decision-ready service coverage outputs. By combining facility locations with administrative boundaries, the workflow produces a borough-level view of healthcare facility distribution and highlights spatial variation in mapped service density.
+
+The classification should be interpreted as an exploratory access indicator rather than a definitive measure of healthcare access. A more advanced model would incorporate population distribution, road networks, travel time, facility capacity, service type, and opening hours. However, this first-stage analysis provides a useful foundation for public health planning, urban service assessment, and humanitarian or development-sector GIS workflows.
+
+## Limitations
+
+- OpenStreetMap facility data may be incomplete or unevenly updated across boroughs.
+- Facility density is calculated by area, not by population need, demand, facility capacity, or service quality.
+- The workflow does not yet include travel-time modelling, public transport access, catchment populations, operating hours, or health service utilization.
+- The access classification is relative and exploratory; it should not be used as an official health service planning assessment without additional validation.
+
+## Skills Demonstrated
+
+- QGIS project setup
+- Coordinate reference system management
+- OpenStreetMap data extraction
+- Vector data cleaning
+- Clipping and merging layers
+- Count points in polygon
+- Field calculator and derived indicators
+- Facility density analysis
+- Categorized and graduated symbology
+- Professional map layout
+- CSV export
+- GIS reporting and case-study writing
+

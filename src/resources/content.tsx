@@ -2,48 +2,33 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Oluwaseun",
+  lastName: "Adeleye",
+  name: "Oluwaseun Adeleye",
+  role: "GIS Analyst & Geospatial Data Consultant",
+  avatar: "/images/Oluwaseun Adeleye Profile.jpeg",
+  email: "adeleyeseun22@gmail.com",
+  location: "Available (Remote)",
+  languages: ["English"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  display: false,
+  title: <>GIS updates from {person.firstName}</>,
+  description: <>Project notes on spatial analysis, QGIS workflows, and geospatial decision-support systems.</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/adeleyeseun22",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/oluwaseun-adeleye-b69373100/",
     essential: true,
   },
   {
@@ -58,26 +43,28 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${person.name} | Geospatial Analytics Portfolio`,
+  description:
+    "GIS portfolio showcasing QGIS workflows, spatial analysis, public health GIS, and geospatial decision-support outputs.",
+  headline: <>GIS Analyst & Geospatial Data Consultant</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured GIS case study</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Healthcare accessibility mapping
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/healthcare-accessibility-mapping-greater-london",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I build spatial analysis workflows, QGIS maps, interactive dashboards, and decision-support
+      outputs for public health, urban planning, humanitarian response, and development programs.
+    </>
   ),
 };
 
@@ -85,7 +72,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} available for remote work.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -94,60 +81,57 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I combine geospatial analysis with a strong background in monitoring, evaluation, public
+        health research, and data analytics. My work focuses on turning spatial data into practical
+        maps, analytical workflows, and decision-support outputs for planning, service delivery, and
+        evidence-based program implementation.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Relevant Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Rovco",
+        timeframe: "2020 - Present",
+        role: "AI Data Annotator & Search Quality Evaluator",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Evaluated search engine results pages (SERPs) to determine relevance, usefulness, 
+            and intent match based on detailed project guidelines and quality standards.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Annotated and categorized search and text-based content using detailed project guidelines, 
+            decision trees, and structured rating taxonomies. .
+          </>,
+          <>
+            Flagged inconsistencies, low-quality outputs, misinformation, 
+            and policy violations for downstream review and model improvement. 
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Independent Geospatial Portfolio Projects",
+        timeframe: "2026",
+        role: "GIS Analyst & Geospatial Data Consultant",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designed a reproducible QGIS workflow for healthcare facility distribution and facility
+            density mapping across Greater London.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Applied open data extraction, CRS management, spatial joins, count points in polygon,
+            density analysis, graduated symbology, and professional map layout design.
           </>,
         ],
         images: [],
@@ -155,78 +139,70 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education & Certifications",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of the West of England (UWE)",
+        description: <>B.Sc. Computer Science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Professional Training",
+        description: <>Certifications and training across project management, research, data analysis, and monitoring and evaluation.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "GIS & Spatial Analysis",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>QGIS project setup, coordinate reference systems, vector cleaning, clipping, merging, spatial joins, count points in polygon, buffers, choropleth mapping, and map layouts.</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "QGIS", icon: "grid" },
+          { name: "Spatial Analysis", icon: "globe" },
+          { name: "Map Layouts", icon: "gallery" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Geospatial Data & Open Data Workflows",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>OpenStreetMap extraction, QuickOSM workflows, administrative boundary processing, GeoPackage storage, CSV exports, and reproducible GIS case-study packaging.</>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "OpenStreetMap", icon: "globe" },
+          { name: "GeoPackage", icon: "document" },
+          { name: "CSV", icon: "document" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "Data Analysis & Decision Support",
+        description: (
+          <>Public health analytics, M&E reporting, indicator summaries, dashboard thinking, evidence synthesis, and stakeholder-ready technical writing.</>
+        ),
+        tags: [
+          { name: "Public Health GIS", icon: "rocket" },
+          { name: "M&E", icon: "document" },
+          { name: "Reporting", icon: "document" },
         ],
+        images: [],
+      },
+      {
+        title: "Web GIS & Portfolio Development",
+        description: (
+          <>Next.js, Vercel, interactive map planning, GeoJSON-ready project structure, and scalable portfolio presentation for future GIS case studies.</>
+        ),
+        tags: [
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Vercel", icon: "rocket" },
+          { name: "Web GIS", icon: "globe" },
+        ],
+        images: [],
       },
     ],
   },
@@ -235,70 +211,24 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "GIS notes and project writeups",
+  description: `Read ${person.firstName}'s notes on GIS, spatial analysis, and geospatial workflows.`,
 };
 
 const work: Work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Projects",
+  title: `GIS Projects – ${person.name}`,
+  description:
+    "Selected geospatial analysis projects covering QGIS workflows, healthcare accessibility mapping, public health GIS, remote sensing, and web GIS.",
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: `Map gallery – ${person.name}`,
+  description: `A collection of GIS maps and spatial analysis outputs by ${person.name}.`,
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
