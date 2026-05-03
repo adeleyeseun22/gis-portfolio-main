@@ -1,5 +1,6 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const person: Person = {
   firstName: "Oluwaseun",

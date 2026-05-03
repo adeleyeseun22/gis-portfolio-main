@@ -1,91 +1,148 @@
-# Magic Portfolio
+# Oluwaseun Adeleye | Geospatial Analytics Portfolio
 
-Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
+A modern GIS, spatial analytics, dashboard, and data consulting portfolio built with **Next.js**, **Vercel**, and a scalable project-based structure.
 
-View the demo [here](https://demo.magic-portfolio.com).
+This portfolio showcases my work across **GIS analysis**, **QGIS workflows**, **public health mapping**, **spatial decision-support systems**, **dashboard development**, **Power BI reporting**, and future **interactive Web GIS applications**.
 
-![Magic Portfolio](public/images/og/home.jpg)
+## Portfolio Focus
 
-## Getting started
+I build spatial analysis workflows, QGIS maps, interactive dashboards, and decision-support outputs for public health, urban planning, humanitarian response, development programs, and business intelligence use cases.
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+This portfolio is designed to grow over time as I add new GIS and analytics projects, including:
 
-**2. Install dependencies**
-```
-npm install
-```
+- Healthcare accessibility mapping
+- Urban growth and land-cover change analysis
+- Flood risk exposure mapping
+- Interactive Web GIS dashboards
+- Power BI and Tableau dashboards
+- Public health and M&E data visualization projects
+- Python-powered geospatial analysis workflows
 
-**3. Run dev server**
-```
-npm run dev
-```
+## Current Featured Project
+**Healthcare Accessibility Mapping in Greater London**
 
-**4. Edit config**
-```
-src/resources/once-ui.config.js
-```
+A QGIS-based workflow for identifying healthcare service coverage patterns and potential access gaps across Greater London.
 
-**5. Edit content**
-```
-src/resources/content.js
-```
+The project demonstrates how open geospatial data can be transformed into client-ready GIS outputs using:
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
+- London borough boundaries
+- OpenStreetMap healthcare facility data
+- QGIS LTR
+- QuickOSM
+- Spatial joins
+- Count points in polygon
+- Facility density calculations
+- Choropleth mapping
+- Professional map layout exports
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+## Key Outputs
+- Healthcare facility distribution map
+- Facility density choropleth map
+- Relative access classification map
+- Borough-level facility count and density table
 
-## Documentation
+## Planned Portfolio Projects
+1. Urban Growth & Land Cover Change Analysis
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+A remote sensing project using satellite imagery to assess urban expansion, vegetation change, and land-cover dynamics.
 
-## Features
+**Expected tools:**
+- QGIS
+- Sentinel-2 imagery
+- Google Earth Engine
+- NDVI / NDBI
+- Raster analysis
+- Change detection
 
-### Once UI
-- All tokens, components & features of [Once UI](https://once-ui.com)
+2. Flood Risk Exposure Mapping
 
-### SEO
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
+A humanitarian GIS project for identifying communities, infrastructure, and services exposed to flood-prone areas.
 
-### Design
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+**Expected tools:**
+- QGIS
+- Raster and vector overlay
+- Exposure mapping
+- Population and settlement data
+- Risk classification
 
-### Content
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+3. Interactive Web GIS Dashboard
 
-### Localization
-- A localized, earlier version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+A client-facing web map dashboard with filters, popups, and downloadable spatial insights.
 
-## Creators
+**Expected tools:**
+- Next.js
+- Leaflet
+- MapLibre
+- GeoJSON
+- Vercel
+- Interactive map components
 
-Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
+4. Power BI / M&E Dashboard Projects
 
-## Get involved
+Dashboard projects focused on public health, development programming, monitoring and evaluation, and performance tracking.
 
-- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
-- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+**Expected tools:**
+- Power BI
+- Excel
+- DAX
+- Data modelling
+- Indicator tracking
+- KPI dashboards
+- Program performance visualization
+- Skills Demonstrated
+- GIS & Spatial Analysis
+- QGIS project setup
+- Coordinate reference system management
+- OpenStreetMap data extraction
+- Spatial joins
+- Point-in-polygon analysis
+- Buffer analysis
+- Thematic mapping
+- Facility density analysis
+- Map layout and export
+- Geospatial Data Management
+- GeoPackage workflows
+- GeoJSON preparation
+- CSV export and cleaning
+- Administrative boundary processing
+- Open data sourcing
+- Spatial data documentation
 
-## License
+## Dashboard & Data Visualization
+*-Power BI dashboard development-*
+*-Tableau dashboard development-*
+*-Excel-based reporting-*
+*-KPI tracking-*
+*-Indicator performance monitoring-*
+*-Public health and M&E visualization-*
+*-Python & Analytics-*
+*-Python for data analysis-*
+*-Pandas-*
+*-GeoPandas-*
+*-Jupyter notebooks-*
+*-Spatial data automation-*
 
-Distributed under the CC BY-NC 4.0 License.
-- Attribution is required.
-- Commercial usage is not allowed.
-- You can extend the license to [Dopler CC](https://dopler.app/license) by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
+## Data cleaning and transformation
+*-Web GIS & Frontend-*
+*-Next.js-*
+*-React-*
 
-See `LICENSE.txt` for more information.
 
-## Deploy with Vercel
+## Tech Stack
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+This portfolio website is built with:
+
+- Next.js
+- React
+- TypeScript
+- Once UI
+- Vercel deployment
+- GitHub version control
+
+## Live Portfolio
+
+Portfolio website:
+
+```text
+Coming soon / https://gis-portfolio-main.vercel.app/
+
