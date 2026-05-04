@@ -1,0 +1,129 @@
+---
+title: "Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025"
+publishedAt: "2026-02-14"
+summary: "A QGIS and Sentinel-2 remote sensing workflow for assessing built-up intensity, vegetation patterns, and index-based change in Dubai between 2019 and 2025."
+image: "/images/projects/urban-growth-vegetation-dubai/map-04-built-up-change-2019-2025.png"
+images:
+  - "/images/projects/urban-growth-vegetation-dubai/map_01_dubai_true_color.png"
+  - "/images/projects/urban-growth-vegetation-dubai/map_02_dubai_built_up_2025_ndbi.png"
+  - "/images/projects/urban-growth-vegetation-dubai/map_03_dubai_vegetation_2025_ndvi.png"
+  - "/images/projects/urban-growth-vegetation-dubai/map_04_dubai_built_up_change_2019_2025.png"
+  - "/images/projects/urban-growth-vegetation-dubai/map_05_dubai_vegetation_change_2019_2025.png"
+team:
+  - name: "Oluwaseun Adeleye"
+    role: "Geospatial Data Analyst / GIS Consultant"
+    avatar: "/images/Oluwaseun Adeleye Profile.jpeg"
+    linkedIn: "https://www.linkedin.com/in/oluwaseun-adeleye-b69373100/"
+---
+
+## Project Overview
+
+This project demonstrates a QGIS-based remote sensing workflow for analyzing urban built-up intensity and vegetation patterns using Sentinel-2 multispectral imagery. Dubai was selected as the pilot geography because it provides a globally recognizable urban environment with strong contrast between built-up zones, desert surfaces, managed vegetation, and coastal features.
+
+The workflow uses Red, Near Infrared, and Shortwave Infrared bands from Sentinel-2 imagery to derive two remote sensing indices: **NDVI** for vegetation signal and **NDBI** for built-up intensity. These outputs were used to examine urban and environmental patterns and to create index-based change maps between 2019 and 2025.
+
+## Problem Statement
+
+Rapid urban development requires spatial evidence to understand how built-up areas, vegetation, and land-surface patterns are changing over time. This project explores how open satellite imagery and QGIS can be used to produce practical remote-sensing outputs for urban planning, environmental monitoring, infrastructure analysis, and geospatial consulting.
+
+## Tools Used
+
+- QGIS LTR
+- Copernicus Browser
+- Sentinel-2 L2A
+- Raster Calculator
+- GeoTIFF
+- CSV export
+- QGIS Print Layout
+
+## Data Used
+
+- Sentinel-2 Red band (B04): Used with NIR to calculate NDVI.
+- Sentinel-2 Near Infrared band (B08): Used in both NDVI and NDBI calculations.
+- SSentinel-2 Shortwave Infrared band (B11): Used with NIR to calculate NDBI after resampling from 20 m to 10 m.
+- Sentinel-2 True Colour Image (TCI): Used as a visual satellite reference map.
+- 2019 and 2025 Sentinel-2 L2A image products: Used for index-based change comparison across time.
+
+
+## Methodology
+
+1. Created a dedicated QGIS project for Dubai urban growth and vegetation analysis using **EPSG:32640 — WGS 84 / UTM Zone 40N**.
+2. Downloaded Sentinel-2 L2A image products for 2019 and 2025 from Copernicus Browser.
+3. Extracted required image bands from the SAFE product folders: **B04, B08, B11, and TCI**.
+4. Loaded the Red, Near Infrared, Shortwave Infrared, and True Colour Image bands into QGIS.
+5. Resampled the B11 Shortwave Infrared band from 20 m to 10 m to align with the 10 m Red and Near Infrared bands.
+6. Calculated NDVI using the Near Infrared and Red bands.
+7. Calculated NDBI using the resampled Shortwave Infrared and Near Infrared bands.
+8. Generated change rasters by subtracting 2019 index outputs from 2025 index outputs.
+9. Styled the raster outputs using pseudocolor and diverging symbology with interpretation labels.
+10. Designed and exported professional map layouts for portfolio presentation.
+
+## Analytical Measures
+
+- NDVI: Indicates vegetation signal and vegetation pattern.
+- NDBI: Indicates built-up intensity or urban surface signal.
+- NDVI Change: Shows vegetation increase, decrease, or relative stability.
+- NDBI Change: Shows increase or decrease in built-up signal.
+
+## Key Outputs
+
+![Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025](/images/projects/urban-growth-vegetation-dubai/map_01_dubai_true_color.png)
+
+**Map 1: Dubai Urban Area — Sentinel-2 True Colour Image**  
+Provides visual satellite reference context for the analysis.
+
+![Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025](/images/projects/urban-growth-vegetation-dubai/map_02_dubai_built_up_2025_ndbi.png)
+
+**Map 2: Built-up Intensity in Dubai, 2025**  
+Uses NDBI to show built-up or urban surface signal.
+
+![Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025](/images/projects/urban-growth-vegetation-dubai/map_03_dubai_vegetation_2025_ndvi.png)
+
+**Map 3: Vegetation Pattern in Dubai, 2025**  
+Uses NDVI to show vegetation signal and managed green-space patterns.
+
+
+![Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025](/images/projects/urban-growth-vegetation-dubai/map_04_dubai_built_up_change_2019_2025.png)
+
+**Map 4: Built-up Change in Dubai, 2019-2025**  
+Uses NDBI difference to show where built-up signal may have increased or reduced.
+
+![Urban Growth & Vegetation Change Analysis in Dubai, 2019–2025](/images/projects/urban-growth-vegetation-dubai/map_05_dubai_vegetation_change_2019_2025.png)
+
+**Map 5: Vegetation Change in Dubai, 2019-2025**  
+Uses NDVI difference to show vegetation increase, decrease, or little change.
+
+## Portfolio Interpretation
+
+The analysis demonstrates how multispectral satellite imagery can be transformed into practical geospatial outputs for urban and environmental assessment. NDBI provides an exploratory indicator of built-up intensity, while NDVI highlights vegetation distribution and managed green areas. The change maps provide a simplified way to visualize where built-up signal and vegetation signal may have increased or decreased between 2019 and 2025.
+
+This project adds a remote-sensing dimension to the portfolio and complements vector-based service accessibility work. It shows the ability to handle raster data, derive analytical indices, interpret spatial outputs, and communicate results through professional cartographic layouts.
+
+## Limitations
+
+- This is an exploratory index-based analysis rather than a fully validated land-cover classification.
+- In arid environments such as Dubai, NDBI can sometimes confuse bare soil, sand, and built-up surfaces.
+- NDVI can be influenced by seasonal timing, irrigation, atmospheric conditions, and image acquisition differences.
+
+## Skills Demonstrated
+
+- Sentinel-2 imagery handling
+- Raster data organization
+- QGIS raster analysis
+- Raster Calculator workflows
+- NDVI calculation
+- NDBI calculation
+- Raster resampling
+- Change detection
+- Pseudocolor raster styling
+- Diverging change-map symbology
+- Professional map layout and export
+- Remote sensing interpretation
+
+
+## Data Source References
+
+- Copernicus Browser
+- Copernicus Data Space Ecosystem
+- Sentinel-2 Mission
+- QGIS Documentation
