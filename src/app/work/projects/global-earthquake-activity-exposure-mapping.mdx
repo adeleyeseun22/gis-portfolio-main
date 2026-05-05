@@ -1,0 +1,138 @@
+---
+title: "Global Earthquake Activity & Exposure Mapping"
+publishedAt: "2026-02-22"
+summary: "A QGIS disaster-risk mapping workflow using USGS magnitude 5.0+ earthquake event data and Natural Earth country boundaries to map seismic activity, high-magnitude events, density hotspots, country-level earthquake counts, and depth-class patterns."
+image: "/images/projects/global-earthquake-activity-exposure-mapping/map-03-earthquake-density-hotspots.png"
+images:
+  - "/images/projects/global-earthquake-activity-exposure-mapping/map_01_global_earthquake_events_2020_2025.png"
+  - "/images/projects/global-earthquake-activity-exposure-mapping/map_02_high_magnitude_earthquakes_m6_plus.png"
+  - "/images/projects/global-earthquake-activity-exposure-mapping/map_03_global_earthquake_density_hotspots.png"
+  - "/images/projects/global-earthquake-activity-exposure-mapping/map_04_earthquake_count_by_country.png"
+  - "/images/projects/global-earthquake-activity-exposure-mapping/map_05_earthquake_events_by_depth_category.png"
+team:
+  - name: "Oluwaseun Adeleye"
+    role: "Geospatial Data Analyst / GIS Consultant"
+    avatar: "/images/Oluwaseun Adeleye Profile.jpeg"
+    linkedIn: "https://www.linkedin.com/in/oluwaseun-adeleye-b69373100/"
+---
+
+## Project Overview
+
+This project demonstrates a QGIS-based disaster-risk mapping workflow for visualizing global earthquake activity and summarizing seismic event patterns using open hazard data. The workflow uses **USGS magnitude 5.0+ earthquake events from 2020 to 2025** and **Natural Earth country boundaries** to produce maps and analytical outputs.
+
+The project focuses on hazard event mapping, magnitude classification, high-magnitude event filtering, earthquake density visualization, country-level point-in-polygon summaries, and earthquake depth classification. It provides a clean global GIS case study that complements vector service-access mapping and remote-sensing analysis in the wider geospatial portfolio.
+
+## Problem Statement
+
+Earthquake risk analysis requires clear spatial evidence on where seismic events occur, how strong they are, how concentrated they are geographically, and which countries experience more frequent high-magnitude events. This project explores how QGIS can be used to transform global earthquake event data into maps, summaries, and portfolio-ready outputs for disaster-risk analytics, humanitarian planning, geospatial reporting, and environmental risk communication.
+
+## Tools Used
+
+- QGIS LTR
+- USGS Earthquake Catalog
+- Natural Earth Admin 0 Countries
+- Field Calculator
+- Count Points in Polygon
+- CSV export
+- Heatmap Renderer
+- QGIS Print Layout
+
+## Data Used
+
+- USGS magnitude 5.0+ earthquake events, 2020-2025
+- Latitude and longitude
+- Magnitude field (mag)
+- Depth field
+- Place / location description
+- Natural Earth Admin 0 Countries
+
+
+## Methodology
+
+1. Created a dedicated QGIS project for global earthquake activity and exposure mapping using **EPSG:4326 — WGS 84**.
+2. Downloaded USGS Earthquake Catalog data for **magnitude 5.0+ events from 2020 to 2025** in CSV format.
+3. Downloaded Natural Earth Admin 0 country boundaries and loaded them into QGIS as the global polygon reference layer.
+4. Loaded the USGS CSV as a delimited text layer using `longitude` as the X field and `latitude` as the Y field.
+5. Exported the earthquake points as a GeoPackage to create a clean processed event layer.
+6. Created a `magnitude_class` field using the QGIS Field Calculator to distinguish moderate, strong, and major earthquakes.
+7. Created a `depth_class` field to classify earthquake events as shallow, intermediate, or deep.
+8. Designed a global earthquake event map using categorized magnitude symbology.
+9. Filtered the earthquake event layer to **magnitude 6.0+** to produce a high-magnitude earthquake map.
+10. Created a heatmap layer to visualize earthquake density hotspots weighted by magnitude.
+11. Used **Count Points in Polygon** to summarize earthquake counts by country.
+12. Styled the country-level counts as a choropleth map and exported the summary table as CSV.
+13. Designed and exported professional map layouts for portfolio presentation.
+
+## Analytical Measures
+
+- Magnitude Class
+- High-Magnitude Filter
+- Depth Class
+- Earthquake Density
+- Country Event Count
+
+## Key Outputs
+
+![Global Earthquake Activity Exposure Mapping](/images/projects/global-earthquake-activity-exposure-mapping/map_01_global_earthquake_events_2020_2025.png)
+
+**Map 1: Global Earthquake Events, 2020-2025**  
+Shows USGS magnitude 5.0+ earthquake events mapped by magnitude class.
+
+![Global Earthquake Activity Exposure Mapping](/images/projects/global-earthquake-activity-exposure-mapping/map_02_high_magnitude_earthquakes_m6_plus.png)
+
+**Map 2: High-Magnitude Earthquake Events, 2020-2025**  
+Shows USGS magnitude 6.0+ events filtered from the M5.0+ event dataset.
+
+![Global Earthquake Activity Exposure Mapping](/images/projects/global-earthquake-activity-exposure-mapping/map_03_global_earthquake_density_hotspots.png)
+
+**Map 3: Global Earthquake Density Hotspots, 2020-2025**  
+Uses a heatmap to visualize concentrations of M5.0+ earthquake activity.
+
+![Global Earthquake Activity Exposure Mapping](/images/projects/global-earthquake-activity-exposure-mapping/map_04_earthquake_count_by_country.png)
+
+**Map 4: Earthquake Count by Country, 2020-2025**  
+Summarizes M5.0+ earthquake event counts by country.
+
+![Global Earthquake Activity Exposure Mapping](/images/projects/global-earthquake-activity-exposure-mapping/map_05_earthquake_events_by_depth_category.png)
+
+**Map 5: Earthquake Events by Depth Category, 2020-2025**  
+Classifies earthquake events into shallow, intermediate, and deep categories.
+
+## Portfolio Interpretation
+
+The analysis demonstrates how global earthquake event data can be transformed into clear geospatial outputs for disaster-risk communication. The magnitude-class map provides an overview of global seismic activity, while the M6.0+ map focuses attention on stronger events. The heatmap highlights global earthquake density hotspots, and the country-count choropleth summarizes event frequency by national boundary.
+
+The depth-class map adds an additional hazard interpretation layer by showing whether earthquakes are shallow, intermediate, or deep. Together, the outputs demonstrate practical QGIS skills in event mapping, classification, filtering, density visualization, point-in-polygon analysis, table export, and cartographic reporting.
+
+## Limitations
+
+- The analysis uses only USGS magnitude 5.0+ events, so smaller earthquakes are outside the project scope.
+- Country-level counts summarize where earthquake epicentres fall; they do not measure population exposure, damage, vulnerability, or economic risk.
+- Earthquake event frequency should not be interpreted as complete seismic risk without tectonic, population, infrastructure, building-code, and vulnerability data.
+- Heatmap outputs are exploratory and depend on visualization settings such as radius, weighting, and scale.
+- A more advanced workflow would include exposure layers, population grids, urban footprints, historical loss data, and vulnerability indices.
+
+## Skills Demonstrated
+
+- USGS earthquake data handling
+- Delimited text layer loading
+- Coordinate reference system setup
+- Magnitude classification
+- Depth classification
+- Attribute filtering
+- Heatmap visualization
+- Count points in polygon
+- Country-level spatial summaries
+- Choropleth mapping
+- CSV table export
+- QGIS Print Layout
+- Hazard event mapping
+- Disaster-risk communication
+- GIS case-study writing
+
+## Data Source References
+
+- USGS Earthquake Catalog
+- USGS Earthquake Hazards Program
+- Natural Earth Admin 0 Countries
+- QGIS Documentation
